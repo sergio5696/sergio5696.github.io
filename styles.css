@@ -1,0 +1,308 @@
+/*elementos genéricos*/
+* {
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.8);
+}
+html {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+}
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+h2 {
+    text-align: center;
+    margin: 15px 0px;
+}
+article {
+    text-align: justify;
+}
+.divisor_horizontal {
+    margin: 30px 10%;
+    border-top: 1px solid;
+	border-color: rgba(0, 0, 0, 0.3);
+}
+.enlaces {
+    text-decoration: none;
+    padding: 0% 2%;
+}
+.enlaces:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+/*index.html + elementos genéricos*/
+/*BODY*/
+    /*HEADER*/
+        /*HEADER_NAV: barra de navegación fija en la zona superior*/
+        nav {
+            background-color: white;
+            width: 100%;
+            height: 5vh;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+        }
+        .logo_menu {
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .enlaces_menu {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        /*HEADER_SECTION: portada con fotografias con links*/
+        #portada {
+            height: 96vh;
+            display: flex;
+            flex-direction: column;
+            /*background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));*/
+        }
+        .fotos_portada {
+            width: 100%;
+            height: 20%;
+            background-size: cover;
+        }
+        #foto_portada_proyecto_1 {
+            background-image: url("./Recursos/p2-6.jpg");
+            background-position: center;
+        }
+        #foto_portada_proyecto_2 {
+            background-image: url("./Recursos/p3-2.jpg");
+            background-position: top;
+        }
+        #foto_portada_proyecto_3 {
+            background-image: url("./Recursos/p4-3.jpg");
+            background-position: top;
+        }
+        #foto_portada_proyecto_4 {
+            background-image: url("./Recursos/p5-2.jpg");
+            background-position: center;
+        }
+        #foto_portada_proyecto_5 {
+            background-image: url("./Recursos/p6-3.jpg");
+            background-position: bottom;
+        }
+    /*MAIN*/
+    #bienvenida h2 {
+        margin-bottom: 20px;
+    }
+    #bienvenida article {
+        margin: 30px 10%;
+    }
+    /*FOOTER*/
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+    footer div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    footer div img {
+        width: 45vh;
+    }
+
+/*work.html*/
+#work_main {
+    display: flex;
+    flex-direction: column;
+}
+#work_main section {
+    display: flex;
+    flex-direction: column;
+    margin: 0% 5%;
+}
+#work_main article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: -15px;
+}
+#work_main section div {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+#work_main a {
+    margin-bottom: 20px;
+}
+.fotos_proyectos {
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+}
+#foto_proyecto_1_1 {
+    background-image: url("./Recursos/p2-6.jpg");
+    background-position: center;
+}
+#foto_proyecto_1_2 {
+    background-image: url("./Recursos/p2-5.jpg");
+    background-position: center;
+}
+#foto_proyecto_2_1 {
+    background-image: url("./Recursos/p3-1.jpg");
+    background-position: center;
+}
+#foto_proyecto_2_2 {
+    background-image: url("./Recursos/p3-3.jpg");
+    background-position: center;
+}
+#foto_proyecto_3_1 {
+    background-image: url("./Recursos/p4-3.jpg");
+    background-position: center;
+}
+#foto_proyecto_3_2 {
+    background-image: url("./Recursos/p4-6.jpg");
+    background-position: center;
+}
+#foto_proyecto_4_1 {
+    background-image: url("./Recursos/p5-2.jpg");
+    background-position: center;
+}
+#foto_proyecto_4_2 {
+    background-image: url("./Recursos/p5-3.jpg");
+    background-position: center;
+}
+#foto_proyecto_5_1 {
+    background-image: url("./Recursos/p6-1.jpg");
+    background-position: center;
+}
+#foto_proyecto_5_2 {
+    background-image: url("./Recursos/p6-3.jpg");
+    background-position: bottom;
+}
+
+/*about.html*/
+#about_main {
+    display: flex;
+    flex-direction: column;
+}
+#about_main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% 5%;
+}
+#about_main article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: -15px;
+}
+#about_main section div {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#about_main a {
+    margin-bottom: 20px;
+}
+.fotos_about {
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+}
+#foto_about_1 {
+    background-image: url("./Recursos/Foto1.jpg");
+    background-position: center;
+}
+#foto_about_2 {
+    background-image: url("./Recursos/Foto2.jpg");
+    background-position: center;
+}
+#foto_about_3 {
+    background-image: url("./Recursos/Foto3.jpg");
+    background-position: center;
+}
+
+/*contact.html*/
+#hablamos h2 {
+    margin-bottom: 20px;
+}
+#hablamos {
+    margin: 20px 10%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 10%;
+}
+label {
+    display: flex;
+    margin: 10px 15px;
+}
+input[type="text"], input[type="email"], textarea {
+    display: block;
+    border-radius: 10px;
+    border: solid 2px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    margin: 10px 15px;
+}
+input[type="submit"] {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin: 15px 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*MEDIA QUERYS*/
+@media (min-width:720px) {
+    #portada{
+        display: flex;
+        flex-direction: row;
+    }
+    .fotos_portada{
+        width: 20%;
+        height: 96vh;
+    }
+    #foto_portada_proyecto_1 {
+        background-image: url("./Recursos/p2-6.jpg");
+        background-position: 980px;
+    }
+    #foto_portada_proyecto_2 {
+        background-image: url("./Recursos/p3-2.jpg");
+        background-position: 915px;
+    }
+    #foto_portada_proyecto_3 {
+        background-image: url("./Recursos/p4-3.jpg");
+        background-position: 920px;
+    }
+    #foto_portada_proyecto_4 {
+        background-image: url("./Recursos/p5-2.jpg");
+        background-position: 560px;
+    }
+    #work_main section div {
+        height: 60vh;
+    }
+    form {
+        margin: 0px 35%;
+    }
+    #about_main article {
+        width: 60%;
+        margin: 2%;
+    }
+    #about_main section div {
+        width: 60%;
+        margin: 2%;
+    }
+}
