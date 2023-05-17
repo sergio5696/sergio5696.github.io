@@ -52,7 +52,7 @@ function reducirFotos(e) {
         setTimeout(function(){e.target.classList.remove("reducirFotos");}, 500);
     }
 }
-
+//comentario1
 //Función para cambiar el texto del botón del formulario una vez enviado
 
 let botonFormulario = document.getElementById("boton_formulario");
