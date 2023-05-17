@@ -88,6 +88,12 @@ article {
             background-image: url("./Recursos/p6-3.jpg");
             background-position: bottom;
         }
+        .ampliarFotos {
+            width: 100%;
+            height: 60%;
+            background-size: cover;
+            /*transition: all 500ms ease;*/
+        }
     /*MAIN*/
     #bienvenida h2 {
         margin-bottom: 20px;
@@ -290,6 +296,12 @@ input[type="submit"]:hover {
     #foto_portada_proyecto_4 {
         background-image: url("./Recursos/p5-2.jpg");
         background-position: 560px;
+    }
+    .ampliarFotos {
+        width: 60%;
+        height: 100%;
+        background-size: cover;
+        transition: all 500ms ease;
     }
     #work_main section div {
         height: 60vh;
